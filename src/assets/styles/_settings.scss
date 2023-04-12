@@ -1,9 +1,8 @@
 body, html {
     min-height: 100%;
     width: 100%;
-    background-color: #E1F5FE;
+    background: radial-gradient(circle, rgba(163, 208, 214, 0.25) 0%, rgba(98, 183, 223, 0.25) 100%);
 }
-
 ::-webkit-scrollbar {
     width: 0;
 }
