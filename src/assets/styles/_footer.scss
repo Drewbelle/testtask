@@ -1,0 +1,21 @@
+.footerFile {
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    background-color: #EF6C00;
+    border-bottom: 3px solid #aa4d00;
+
+    &_content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_title {
+            align-self: flex-start;
+        }
+    }
+}

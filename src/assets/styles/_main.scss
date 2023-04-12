@@ -1,0 +1,290 @@
+.mainFile {
+    width: 100vw;
+    min-height: 100vh;
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-titleBlock {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url(../imgs/bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &_title {
+                width: 50%;
+                height: 20%;
+                font-size: 48px;
+                text-align: center;
+                margin-top: 100px;
+                color: white;
+                font-weight: 900;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                @include smallSize {
+                    font-size: 12px;
+                }
+            }
+
+            &_feedback {
+                width: 150px;
+                height: 50px;
+                margin-bottom: 50px;
+                line-height: 50px;
+                font-size: 16px;
+                background-color: #0277BD;
+                color: white;
+                border: 1px solid black;
+                border-radius: 10px;
+                text-align: center;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #29B6F6;
+                    color: black;
+                }
+            }
+        }
+
+        &-description {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            border-radius: 20px;
+            position: relative;
+            margin-top: 50px;
+            @include mediumSize {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            @include smallSize {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &::before {
+                content: 'Информация о нас';
+                color: #0277BD;
+                text-align: center;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 16px;
+                position: absolute;
+                top: -25px;
+                left: calc(50% - 100px);
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: white;
+            }
+
+            &_about {
+                width: 30%;
+                height: 50%;
+                padding: 10px;
+                @include mediumSize {
+                    width: 100%;
+                }
+                @include smallSize {
+                    width: 100%;
+                }
+
+                &_title {
+                    width: 100%;
+                    height: 10%;
+                    padding: 20px;
+                }
+
+                &_info {
+                    width: 100%;
+                    height: 90%;
+                    padding: 20px;
+                    font-size: 16px;
+                    background-color: rgba(222, 184, 135, 0.500);
+                    border-radius: 40px;
+                }
+            }
+
+            &_price {
+                width: 60%;
+                height: 50%;
+                padding: 10px;
+                @include mediumSize {
+                    width: 100%;
+                }
+                @include smallSize {
+                    width: 100%;
+                }
+
+                &_title {
+                    width: 100%;
+                    height: 10%;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+                    @include mediumSize {
+                        justify-content: flex-start;
+                    }
+                    @include smallSize {
+                        justify-content: flex-start;
+                    }
+                }
+
+                &_info {
+                    width: 100%;
+                    height: 90%;
+                    padding: 20px;
+                    font-size: 16px;
+                    white-space: pre-wrap;
+                    background-color: rgba(222, 184, 135, 0.500);
+                    border-radius: 40px;
+                }
+            }
+
+            &_kinds {
+                width: 100%;
+                height: 50%;
+                padding: 10px;
+                @include mediumSize {
+                    width: 100%;
+                }
+                @include smallSize {
+                    width: 100%;
+                }
+
+                &_title {
+                    width: 100%;
+                    height: 10%;
+                    padding: 20px;
+                    display: flex;
+                }
+
+                &_info {
+                    width: 100%;
+                    height: 90%;
+                    padding: 20px;
+                    font-size: 16px;
+                    background-color: rgba(222, 184, 135, 0.500);
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        &-examples {
+            width: 80%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            border-radius: 20px;
+            @include smallSize {
+                height: 300px;
+            }
+
+            &::before {
+                content: 'Наши работы';
+                color: #0277BD;
+                text-align: center;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 16px;
+                position: absolute;
+                top: -25px;
+                left: calc(50% - 100px);
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: white;
+            }
+
+            &_title {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                font-size: 32px;
+                text-align: center;
+            }
+        }
+
+        &-reviews {
+            width: 80%;
+            min-height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            border-radius: 20px;
+            position: relative;
+            @include smallSize {
+                width: 100%;
+            }
+
+            &::before {
+                content: 'Что он нас пишут';
+                color: #0277BD;
+                text-align: center;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 16px;
+                position: absolute;
+                top: -25px;
+                left: calc(50% - 100px);
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: white;
+            }
+
+            &_container {
+                width: 80%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+        }
+
+        &-calculate {
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .coloredSpan {
+            height: 100%;
+            font-size: 20px;
+            color: #EF6C00;
+            @include mediumSize {
+                font-size: 12px;
+            }
+            @include smallSize {
+                font-size: 12px;
+            }
+        }
+    }
+}

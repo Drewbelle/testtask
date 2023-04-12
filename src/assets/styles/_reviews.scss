@@ -1,0 +1,82 @@
+.reviewsFile {
+    width: 90%;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid #29B6F6;
+    border-radius: 10px;
+    @include smallSize {
+        width: 100%;
+    }
+
+    &_username {
+        width: 50%;
+        height: 25px;
+        line-height: 25px;
+        font-size: 16px;
+        @include mediumSize {
+            text-align: center;
+        }
+        @include smallSize {
+            text-align: center;
+        }
+    }
+
+    &_date {
+        width: 50%;
+        height: 25px;
+        line-height: 25px;
+        font-size: 16px;
+        @include mediumSize {
+            text-align: center;
+        }
+        @include smallSize {
+            text-align: center;
+        }
+    }
+
+    &_info {
+        width: 100%;
+        display: flex;
+        @include mediumSize {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include smallSize {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_img {
+            width: 20%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 1px solid black;
+            border-radius: 10px;
+            @include mediumSize {
+                width: 200px;
+                height: 200px;
+            }
+            @include smallSize {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &_comment {
+            width: 80%;
+            line-height: 22.5px;
+            font-size: 16px;
+            padding: 20px;
+            text-align: start;
+            @include smallSize {
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+    }
+}

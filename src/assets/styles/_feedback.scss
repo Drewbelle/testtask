@@ -1,0 +1,17 @@
+.feedBackFile {
+    width: 100vw;
+    min-height: 100vh;
+
+    &_content {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_form {
+            width: 50%;
+            height: 50vh;
+        }
+    }
+}

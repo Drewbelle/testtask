@@ -1,0 +1,52 @@
+@import 'sliderel';
+.sliderFile {
+    width: 700px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    @include smallSize {
+        width: 90%;
+    }
+
+    &_left { 
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    &_block { 
+        width: 500px;
+        height: 500px;
+        display: flex;
+        overflow: hidden;
+        @include smallSize {
+            width: 200px;
+            height: 200px;
+        }
+
+
+        &_content {
+            height: 500px;
+            display: flex;
+            transition-property: all;
+            transition: 1s;
+            @include smallSize {
+                height: 200px;
+            }
+        }
+    }
+    &_right { 
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
