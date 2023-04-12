@@ -14,21 +14,10 @@
       </div>
 
       <div v-if="this.winwid > 767" class="headerFile_content_login">
-        <v-btn 
-          class="text-none"
-          color="orange-lighten-2"
-          rounded="0"
-        >
-          Вход
-        </v-btn>
-
-        <v-btn 
-          class="text-none"
-          color="orange-lighten-2"
-          rounded="0"
-        >
-          Регистрация
-        </v-btn>
+        <v-icon style="font-size: 30px;">mdi-account</v-icon>  
+        <span class="logreg">Вход</span>
+        <v-icon style="font-size: 30px;">mdi-account-group-outline</v-icon>  
+        <span class="logreg">Регистрация</span>
       </div>
       <div v-else-if="this.winwid <= 767" class="headerFile_content_login">
         <v-icon style="font-size: 25px;">mdi-account</v-icon>
